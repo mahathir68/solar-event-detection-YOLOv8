@@ -2,10 +2,10 @@ import os
 import shutil
 
 # 📂 Source directory containing .jpg files
-SOURCE_DIR = 'annotations'  # Replace with your actual folder name containing all images
+SOURCE_DIR = 'validation_annotation'  # Replace with your actual folder name containing all images
 
 # 📁 Destination directory
-DEST_DIR = os.path.join('images', 'train')
+DEST_DIR = os.path.join('images', 'val')
 
 # 🚨 Make sure destination exists (you will create it manually)
 if not os.path.isdir(DEST_DIR):

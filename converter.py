@@ -1,12 +1,12 @@
 import os
 import xml.etree.ElementTree as ET
 
-# Define class labels (must match the object names in XML)
+# Define class labels
 CLASSES = ['prominence', 'sunspot', 'coronal_hole']
 
 # Input and output directories
-ANNOTATIONS_DIR = 'annotations'  # Folder with XML files
-OUTPUT_BASE = 'labels'           # Base folder where subfolders already exist
+ANNOTATIONS_DIR = 'validation_annotation'           # Folder with XML files
+OUTPUT_DIR = 'labels/val'               # Single output folder (already created)
 
 def convert_bbox(size, box):
     """Convert VOC to YOLO format (normalized)."""
@@ -32,7 +32,6 @@ for file in os.listdir(ANNOTATIONS_DIR):
     height = int(size.find('height').text)
 
     output_lines = []
-    target_class = None
 
     for obj in root.findall('object'):
         cls_name = obj.find('name').text.strip().lower()
@@ -50,17 +49,8 @@ for file in os.listdir(ANNOTATIONS_DIR):
         yolo_box = convert_bbox((width, height), (xmin, xmax, ymin, ymax))
         output_lines.append(f"{cls_id} {' '.join(f'{x:.6f}' for x in yolo_box)}")
 
-        # Assume only one class per XML file
-        target_class = cls_name
-
-    if output_lines and target_class:
-        subfolder = os.path.join(OUTPUT_BASE, target_class.replace(" ", "_").lower())
-        if not os.path.isdir(subfolder):
-            print(f"❌ Subfolder '{subfolder}' not found! Please create it manually.")
-            continue
-
-        txt_filename = file.replace('.xml', '.txt')
-        out_path = os.path.join(subfolder, txt_filename)
+    if output_lines:
+        out_path = os.path.join(OUTPUT_DIR, file.replace('.xml', '.txt'))
 
         with open(out_path, 'w') as f:
             f.write('\n'.join(output_lines))

@@ -1,0 +1,9 @@
+path: F:\Solar Event Detection Project\2nd attempt #absolute path
+train: images/train #relative path
+val: images/val #relative path
+
+#classes
+names:
+  0: prominence
+  1: sunspot
+  2: coronal_hole
