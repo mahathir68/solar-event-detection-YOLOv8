@@ -1,0 +1,14 @@
+<annotation>
+	<folder>prominence_1</folder>
+	<filename>20110728_040032_SDO_AIA_304_512.jpg</filename>
+	<path>D:\kasi\Research\2020\2020_ObjectDetection\data\prominence_1\20110728_040032_SDO_AIA_304_512.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+</annotation>

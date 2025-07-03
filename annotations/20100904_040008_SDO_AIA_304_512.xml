@@ -1,0 +1,26 @@
+<annotation>
+	<folder>prominence_1</folder>
+	<filename>20100904_040008_SDO_AIA_304_512.jpg</filename>
+	<path>D:\jhbaek\prominence_1\20100904_040008_SDO_AIA_304_512.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>prominence</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>77</xmin>
+			<ymin>365</ymin>
+			<xmax>110</xmax>
+			<ymax>404</ymax>
+		</bndbox>
+	</object>
+</annotation>

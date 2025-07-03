@@ -1,0 +1,26 @@
+<annotation>
+	<folder>coronal_hole</folder>
+	<filename>20100916_000854_SDO_AIA_193_512.jpg</filename>
+	<path>D:\SDO\coronal_hole\20100916_000854_SDO_AIA_193_512.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>coronal_hole</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>68</xmin>
+			<ymin>124</ymin>
+			<xmax>160</xmax>
+			<ymax>233</ymax>
+		</bndbox>
+	</object>
+</annotation>

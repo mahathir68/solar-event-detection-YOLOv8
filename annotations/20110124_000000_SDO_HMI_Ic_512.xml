@@ -1,0 +1,26 @@
+<annotation>
+	<folder>sunspot</folder>
+	<filename>20110124_000000_SDO_HMI_Ic_512.jpg</filename>
+	<path>D:\kasi\Research\2020\2020_ObjectDetection\data\sunspot\20110124_000000_SDO_HMI_Ic_512.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>512</width>
+		<height>512</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>sunspot</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>353</xmin>
+			<ymin>135</ymin>
+			<xmax>395</xmax>
+			<ymax>183</ymax>
+		</bndbox>
+	</object>
+</annotation>
