@@ -26,8 +26,9 @@ train_results = model.train(
 metrics = model.val()
 
 # Perform object detection on an image
-results = model("20100902_000032_SDO_AIA_304_512.jpg")  # Predict on an image
-results[0].show()  # Display results
+results = model("test_image", save = True)  # Predict on an image
+for result in results:
+    result.show()  # Display results
 
 # Export the model to ONNX format for deployment
 path = model.export(format="onnx")  # Returns the path to the exported model
