@@ -8,7 +8,7 @@ This project is inspired by the research paper:
 **Baek et al. (2021)** - *“Solar Event Detection Using Deep-Learning-Based Object Detection Methods”*  
 The study focuses on detecting and localizing three types of solar phenomena: **prominence**, **sunspot**, and **coronal hole** using object detection models like SSD and Faster R-CNN.
 
-In this implementation, we utilize **YOLOv11**, selected for its advanced architecture designed to improve multi-scale object detection performance. Unlike earlier YOLO versions, YOLOv11 integrates the **C3K2**, **SPPF**, and **C2PSA** modules, enhancing detection across varied object sizes and feature granularities (Rao, 2023).
+In this implementation, I utilized **YOLOv11**, selected for its advanced architecture designed to improve multi-scale object detection performance. Unlike earlier YOLO versions, YOLOv11 integrates the **C3K2**, **SPPF**, and **C2PSA** modules, enhancing detection across varied object sizes and feature granularities (Rao, 2023).
 
 ## Implementation Overview
 
