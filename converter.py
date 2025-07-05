@@ -36,7 +36,7 @@ for file in os.listdir(ANNOTATIONS_DIR):
     for obj in root.findall('object'):
         cls_name = obj.find('name').text.strip().lower()
         if cls_name not in CLASSES:
-            print(f"⚠️ Unknown class '{cls_name}' in {file}, skipping.")
+            print(f" Unknown class '{cls_name}' in {file}, skipping.")
             continue
 
         cls_id = CLASSES.index(cls_name)
@@ -55,6 +55,6 @@ for file in os.listdir(ANNOTATIONS_DIR):
         with open(out_path, 'w') as f:
             f.write('\n'.join(output_lines))
 
-        print(f"✅ {file} → {out_path}")
+        print(f" {file} → {out_path}")
     else:
-        print(f"⚠️ Skipped {file} (no valid objects found)")
+        print(f" Skipped {file} (no valid objects found)")
