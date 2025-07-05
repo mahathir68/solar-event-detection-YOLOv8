@@ -1,4 +1,4 @@
-# Solar-Event-Detection-YOLOv8
+
 
 # Solar Event Detection with YOLOv11
 
