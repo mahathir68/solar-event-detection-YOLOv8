@@ -36,7 +36,8 @@ Note: The traditional 4:1 train:test ratio was not strictly followed.
 - Rao, N. (2023). *YOLOv11 Explained: Next-Level Object Detection with Enhanced Speed and Accuracy*. Medium. [https://medium.com/@nikhil-rao-20/yolov11-explained-next-level-object-detection-with-enhanced-speed-and-accuracy-2dbe2d376f71](https://medium.com/@nikhil-rao-20/yolov11-explained-next-level-object-detection-with-enhanced-speed-and-accuracy-2dbe2d376f71)
 
 - Ultralytics. (2024). *Ultralytics YOLO*. GitHub Repository. [https://github.com/ultralytics/ultralytics](https://github.com/ultralytics/ultralytics)
-
+- Baek, J.-H., et al. Solar Event Detection Using Deep-Learning-Based Object Detection Methods, 2021.
+Dataset used in this project is sourced from the SDO data provided (in part) by the Korea Data Center (KDC) for SDO, in cooperation with NASA, Stanford University (JSOC), and KISTI (KREONET), which is supported by the "Next Generation Space Weather Observation Network" project of the Korea Astronomy and Space Science Institute (KASI).
 ---
 
 
